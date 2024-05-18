@@ -1,0 +1,84 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.header {
+    text-align: center;
+}
+
+.single-member-image img {
+    border-radius: 50%;
+}
+
+.team-members-area {
+    display: flex;
+}
+
+.single-member-image img {
+    width: 80%;
+}
+
+.single-team-member {
+    position: relative;
+}
+
+.single-member-front {
+    margin-right: 20px;
+    background: rgb(250, 190, 166);
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(82, 75, 75, 0.562);
+}
+
+.single-member-image {
+    text-align: center;
+    padding: 30px;
+}
+
+.intro{
+    border-top: 10px solid rgb(255, 62, 62);
+    padding: 20px;
+    background: black;
+    color: white;
+    border-radius: 5px;
+}
+
+
+.icon svg {
+    width: 15px;
+    margin-right: 10px;
+    background: rgb(255, 62, 62);
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.single-member-hover p {
+    display: flex;
+    align-items: center;
+}
+
+.single-member-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 85%;
+    visibility: hidden;
+    opacity: 0;
+    border-radius: 5px;
+    margin-right: 20px;
+    background: black;
+    color: white;
+    padding: 20px;
+    border-top: 10px solid rgb(255, 62, 62);
+}
+
+.single-team-member:hover
+.single-member-hover{
+    visibility: visible;
+    opacity: 1;
+    transition: .7s;
+}
